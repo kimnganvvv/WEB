@@ -81,6 +81,39 @@
             <div><a href="#">Khác</a></div>
         </div> 
     </header>
+    <nav>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="/img/combokfc.png" alt="combokfc">
+            </div>
+            <div class="slide fade">
+                <img src="/img/combobuncha.png" alt="combobuncha">
+            </div>
+            <div class="slide fade">
+                <img src="/img/epthom.png" alt="nuocepthom">
+            </div class="slide fade">
+            <div class="slide fade">
+                <img src="/img/khucbach.png" alt="khucbachsieudao">
+            </div>
+        </div>
+        <script>
+            // script.js
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 4000); // Thay đổi slide mỗi 2 giây
+            }
+            
+            </script>
+    </nav>
         <main>
             <nav id="top"></nav>
             <section class="products">
@@ -138,12 +171,12 @@
                     <div class="flex">
                         <div class="product">
                             <div>
-                                <img src="/img/che.jpg" alt="che">
+                                <img src="/img/khucbachsieudao.jpg" alt="che">
                                 <div>
-                                    <p>Chè Tiên Thảo Hạt Chia</p>
-                                    <p>MÂY - Chè, Xôi & Tráng Miệng - Lê Văn Lương</p>
-                                    <span class="dong"><sup><u>đ</u></sup></span><span class="price">42.000</span>
-                                    <p>393 Lê Văn Lương, P. Tân Phong, Quận 7, TP. HCM</p>
+                                    <p>Khúc Bạch Siêu Đào</p>
+                                    <p>An Vy - Chè Ngon Ít Ngọt - Phan Huy Thực</p>
+                                    <span class="dong"><sup><u>đ</u></sup></span><span class="price">20.000<span class="discount">-43%</span></span>
+                                    <p>39 Phan Huy Thực, P. Tân Kiểng, Quận 7, TP. HCM</p>
                                 </div>
                             </div>
                         </div>

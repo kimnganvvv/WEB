@@ -11,6 +11,7 @@ body{
 
 
 /*HEADER*/
+/*MENU*/
 header{
     font-weight: bold;
     z-index: 1000;
@@ -67,7 +68,7 @@ header{
     color: #ea320d;
 
 }
-/*NAV*/
+/*HOME*/
 .home{
     margin:0 6% 0 6%;
     background-color: white;
@@ -97,6 +98,47 @@ header{
    background-color: rgb(202, 205, 204);
    border-radius: 10px 10px 0 0 ;
 }
+
+/*NAV*/
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Fade effect */
+.fade {
+    -webkit-animation: fade 1.5s ease-in-out;
+    animation: fade 1.5s ease-in-out;
+}
+
+@-webkit-keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
 
 /*FOOTER*/
 .info{
@@ -169,9 +211,10 @@ header{
 .discount{
     font-size: 12px;
     color: red;
-    background-color: #fae6e2;
-    padding: 1px;
+    background-color: #f7dfda;
+    padding: 3px;
     position: relative;
+    border-radius: 2px;
     left: 5px;
 }
 
@@ -181,7 +224,7 @@ header{
 }
 
 .dong{
-    font-size: 10px;
+    font-size: 12px;
     padding: 2px;
     color: red;
 }
