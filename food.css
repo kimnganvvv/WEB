@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 
@@ -16,24 +16,24 @@ header{
     z-index: 1000;
 }
 .menu>div{
-    padding: 5px;
+    padding: 10px;
 }
 .menu {
-    font-size: 8px;  
+    font-size: 12px;  
     background-color: #ea320d;  
 }
 
 .menu>h img{
-    width: 20% ;
+    width: 30% ;
 }
 
 .menu>div.search{
     position: absolute;
-    left: 50%;
+    left: 55%;
 }
 .menu>div.search>div{
-    height: 8px;
-    padding: 6px;
+    height: 11px;
+    padding: 10px;
     border: 1.5px solid white;
     border-radius: 0 4px 4px 0;
     position: relative;
@@ -41,25 +41,25 @@ header{
     left:0;
 }
 .menu>div.search>input{
-    height: 20px;
-    width: 120px;
+    height: 30px;
+    width: 200px;
    border-right: none;
    border: 1px solid white;
    border-radius: 4px 0 0 4px;
-   font-size: 8px;
+   font-size: 15px;
    margin: 1.5px;
 }
 .menu>div.user{
     margin-left: auto;
 }
 .menu>div.cart{
-    font-size: 10px;
+    font-size: 20px;
     border-radius: 50%;
     background-color: azure;
     align-content: center;
-    margin: 4px;
+    margin: 5px;
     position: absolute;
-    right: 20%;
+    right: 15%;
 }
 
 .menu>div.cart:hover{
@@ -75,7 +75,7 @@ header{
 }
 
 .home>h img{
-    width: 30px;
+    width: 50px;
 }
 
 .home>div>a{
@@ -89,7 +89,7 @@ header{
     list-style-type: none;
     text-align: center;
     width: 15.7%;
-    font-size: 8px;
+    font-size: 15px;
 }
 
 .home>div>a:hover{
@@ -100,27 +100,34 @@ header{
 
 /*FOOTER*/
 .info{
-    text-indent: 10px;
+    text-indent: 15px;
     padding: 2%;
 }
 
  .info>div>img{
-    width: 30px;
+    width: 50px;
  }
 
  .info>p{
-    font-size: 8px;
+    font-size: 12px;
  }
 
  /*MAIN*/
  /*SECTION*/
+ .products>div{
+    margin: 20px;
+ }
+ .products>div>p{
+    border: 1px solid rgb(199, 198, 198);
+    padding:8px;
+ }
  .products{
     margin: 0 5% 0 5%;
  }
  .product{
     width: 25%;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 15px;
 }
 .product > div{
     border-radius: 4px;
@@ -135,11 +142,11 @@ header{
 }
 
 .product>div>div{
-    margin: 10px;
+    margin: 15px;
     border-top: 1px ridge rgb(215, 214, 214);
 }
 .product>div>div>p{
-    font-size: 8px;
+    font-size: 12px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; 
@@ -147,12 +154,12 @@ header{
 
 .product>div>div>p:first-child{
     font-weight: bold;
-    font-size: 10px;
+    font-size: 15px;
 }
 .product>div>div>p:last-child{
     color: gray;
     font-weight: lighter;
-    font-size: 6px;
+    font-size: 10px;
 }
 
 .product>div:hover{
@@ -160,7 +167,7 @@ header{
 }
 
 .discount{
-    font-size: 6px;
+    font-size: 12px;
     color: red;
     background-color: #fae6e2;
     padding: 1px;
@@ -170,11 +177,11 @@ header{
 
 .price{
     color: red;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .dong{
-    font-size: 6px;
+    font-size: 10px;
     padding: 2px;
     color: red;
 }

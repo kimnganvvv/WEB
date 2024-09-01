@@ -44,6 +44,11 @@
                         scrollTop:0
                     },800);
             })
+            $("#Home").click(function(){
+                $("html, body").animate({
+                        scrollTop:0
+                    },800);
+            })
         })
     </script>
 </head>
@@ -67,8 +72,8 @@
             </div>
         </div>
         <div class="home flex">
-            <h><a href="#"><img src="/img/logo.png" alt="logo"></a></h>
-            <div><a href="#">Món ăn</a></div>
+            <h><a id="Home" href="javascript:;"><img src="/img/logo.png" alt="logo"></a></h>
+            <div><a href="#">Tất cả</a></div>
             <div><a href="#">Thức uống</a></div>
             <div><a href="#">Cơm hộp</a></div>
             <div><a href="#">Mì phở</a></div>
@@ -225,9 +230,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="drink">
-                        <p>MÌ PHỞ</p>
-                        <div class="flex">
+                </div>
+                <div class="noddle">
+                    <p>MÌ PHỞ</p>
+                    <div class="flex">
                             <div class="product">
                                 <div>
                                     <img src="/img/buncha.jpg" alt="buncha">
@@ -273,51 +279,51 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="rice">
-                        <p>KHÁC</p>
-                        <div class="flex">
-                            <div class="product">
+                </div>
+                <div class="rice">
+                    <p>KHÁC</p>
+                    <div class="flex">
+                        <div class="product">
+                            <div>
+                                <img src="/img/kfc.jpg" alt="garankfc">
                                 <div>
-                                    <img src="/img/kfc.jpg" alt="garankfc">
-                                    <div>
-                                        <p>Combo Cơm Trưa Phi-lê Gà Quay</p>
-                                        <p>Gà Rán KFC - Phạm Văn Chiêu</p>
-                                        <span class="dong"><sup><u>đ</u></sup></span><span class="price">44.000<span class="discount">-33%</span></span>
-                                        <p>84 Phạm Văn Chiêu, P. 9, Gò Vấp, TP. HCM</p>
-                                    </div>
+                                    <p>Combo Cơm Trưa Phi-lê Gà Quay</p>
+                                    <p>Gà Rán KFC - Phạm Văn Chiêu</p>
+                                    <span class="dong"><sup><u>đ</u></sup></span><span class="price">44.000<span class="discount">-33%</span></span>
+                                    <p>84 Phạm Văn Chiêu, P. 9, Gò Vấp, TP. HCM</p>
                                 </div>
                             </div>
-                            <div class="product">
+                        </div>
+                        <div class="product">
+                            <div>
+                                <img src="/img/comgasottieuxanh.jpg" alt="comgaxottieuxanh">
                                 <div>
-                                    <img src="/img/comgasottieuxanh.jpg" alt="comgaxottieuxanh">
-                                    <div>
-                                        <p>Combo 1: 1 Gà nướng + 1 ống cơm lam + 4 bánh bao chiên</p>
-                                        <p>Gà Nướng, Cơm Lam & Sườn Cay Nướng Đỗ Gia - Huỳnh Tấn Phát</p>
-                                        <span class="dong"><sup><u>đ</u></sup></span><span class="price">220.000</span>
-                                        <p>2086 Huỳnh Tấn Phát, TT. Nhà Bè, Nhà Bè, TP. HCM</p>
-                                    </div>
+                                    <p>Combo 1: 1 Gà nướng + 1 ống cơm lam + 4 bánh bao chiên</p>
+                                    <p>Gà Nướng, Cơm Lam & Sườn Cay Nướng Đỗ Gia - Huỳnh Tấn Phát</p>
+                                    <span class="dong"><sup><u>đ</u></sup></span><span class="price">220.000</span>
+                                    <p>2086 Huỳnh Tấn Phát, TT. Nhà Bè, Nhà Bè, TP. HCM</p>
                                 </div>
                             </div>
-                            <div class="product">
+                        </div>
+                        <div class="product">
+                            <div>
+                                <img src="/img/nemnuong.jpg" alt="nemnuong">
                                 <div>
-                                    <img src="/img/nemnuong.jpg" alt="nemnuong">
-                                    <div>
-                                        <p>Nem nướng cuốn bánh tráng (nguyên cây nem)</p>
-                                        <p>Nem Ngon Quán - Nem Nướng Nha Trang - Đỗ Xuân Hợp</p>
-                                        <span class="dong"><sup><u>đ</u></sup></span><span class="price">109.000</span>
-                                        <p>Chung Cư Ehome S Căn B006, Đỗ Xuân Hợp, P. Phú Hữu, Thành Phố Thủ Đức, TP. HCM</p>
-                                    </div>
+                                    <p>Nem nướng cuốn bánh tráng (nguyên cây nem)</p>
+                                    <p>Nem Ngon Quán - Nem Nướng Nha Trang - Đỗ Xuân Hợp</p>
+                                    <span class="dong"><sup><u>đ</u></sup></span><span class="price">109.000</span>
+                                    <p>Chung Cư Ehome S Căn B006, Đỗ Xuân Hợp, P. Phú Hữu, Thành Phố Thủ Đức, TP. HCM</p>
                                 </div>
                             </div>
-                            <div class="product">
+                        </div>
+                        <div class="product">
+                            <div>
+                                <img src="/img/banhtrang.jpg" alt="banhtrang">
                                 <div>
-                                    <img src="/img/banhtrang.jpg" alt="banhtrang">
-                                    <div>
-                                        <p>Bánh Tráng Tôm Khô Tóp Mỡ Rim Hành</p>
-                                        <p>Bánh Tráng Tóp Mỡ Trứng Lòng Đào - Thèm Gì Cũng Có - Ngô Tất Tố</p>
-                                        <span class="dong"><sup><u>đ</u></sup></span><span class="price">37.000</span>
-                                        <p>42 Ngô Tất Tố, P. 19, Bình Thạnh, TP. HCM</p>
-                                    </div>
+                                    <p>Bánh Tráng Tôm Khô Tóp Mỡ Rim Hành</p>
+                                    <p>Bánh Tráng Tóp Mỡ Trứng Lòng Đào - Thèm Gì Cũng Có - Ngô Tất Tố</p>
+                                    <span class="dong"><sup><u>đ</u></sup></span><span class="price">37.000</span>
+                                    <p>42 Ngô Tất Tố, P. 19, Bình Thạnh, TP. HCM</p>
                                 </div>
                             </div>
                         </div>
