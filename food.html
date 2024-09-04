@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FUN~OH">
+    <meta name="keywords" content="Đặt món ăn, food, thành phố Hồ Chí Minh">
     <title>FUN~OH</title>
     <link rel="stylesheet" href="food.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -61,10 +63,10 @@
             <h>
                 <a><img src="/img/brand.png" alt="brand"></a>
             </h>
-            <div class="search flex">
-                <input type="search" placeholder="Tìm món ăn" >
+            <div class="search flex" id="searchForm">
+                <input type="search" id="searchInput" placeholder="Tìm món ăn" >
                 <div><i class="fas fa-search"></i></div>
-            </div > 
+            </div >
             <div class="cart"><i class="fas fa-shopping-cart"></i></div>
             <div class="user">
                 <i class="fas fa-user-circle"></i>
@@ -82,37 +84,20 @@
         </div> 
     </header>
     <nav>
-        <div class="slideshow-container">
+        <div class="slideshow">
             <div class="slide fade">
-                <img src="/img/combokfc.png" alt="combokfc">
+                <img src="/img/combokfc.jpg" alt="combokfc">
             </div>
             <div class="slide fade">
-                <img src="/img/combobuncha.png" alt="combobuncha">
+                <img src="/img/combobuncha.jpg" alt="combobuncha">
             </div>
             <div class="slide fade">
-                <img src="/img/epthom.png" alt="nuocepthom">
-            </div class="slide fade">
+                <img src="/img/epthom.jpg" alt="nuocepthom">
+            </div>
             <div class="slide fade">
-                <img src="/img/khucbach.png" alt="khucbachsieudao">
+                <img src="/img/khucbach.jpg" alt="khucbachsieudao">
             </div>
         </div>
-        <script>
-            // script.js
-            let slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-            let slides = document.getElementsByClassName("slide");
-            for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            slides[slideIndex-1].style.display = "block";  
-            setTimeout(showSlides, 4000); // Thay đổi slide mỗi 2 giây
-            }
-            
-            </script>
     </nav>
         <main>
             <nav id="top"></nav>
@@ -313,7 +298,7 @@
                             </div>
                         </div>
                 </div>
-                <div class="rice">
+                <div class="other">
                     <p>KHÁC</p>
                     <div class="flex">
                         <div class="product">
