@@ -239,3 +239,36 @@ a#goTop>img{
     right: 10px;
     z-index: 1000;
 }
+
+/*DANG NHAP/DANG KI*/
+
+.dangnhap{
+    width: 300px;
+    height: 300px;
+    border: 1px solid grey;
+    border-radius: 100px;
+    text-align: center;
+}
+h2{
+    color: #868787;
+    font-family: sans-serif;
+}
+.dangnhap input{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.dangnhap button{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+button:hover{
+    font-size: 15px;
+}
