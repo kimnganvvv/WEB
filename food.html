@@ -46,11 +46,6 @@
                         scrollTop:0
                     },800);
             })
-            $("#Home").click(function(){
-                $("html, body").animate({
-                        scrollTop:0
-                    },800);
-            })
         })
     </script>
 </head>
@@ -73,14 +68,29 @@
                 <h><a href="dangki.html">Đăng ký</a> / <a href="dangnhap.html">Đăng nhập</a></h>
             </div>
         </div>
+        <script>
+             $(document).ready(function(){
+                $("div.home>div>a").click(function(){
+                    event.preventDefault()
+                    //xu ly tab
+                    $("div.home>div>a").removeClass("active")
+                    $(this).addClass("active")
+
+                    //xu ly content
+                    var home=$(this).attr("href")
+                    $(".products>div>p").hide()
+                    $(".products>div>div").hide()
+                    $(home).show()
+            })
+             })
+        </script>
         <div class="home flex">
             <h><a id="Home" href="javascript:;"><img src="/img/logo.png" alt="logo"></a></h>
-            <div><a href="#">Tất cả</a></div>
-            <div><a href="#">Thức uống</a></div>
-            <div><a href="#">Cơm hộp</a></div>
-            <div><a href="#">Mì phở</a></div>
-            <div><a href="#">Tráng miệng</a></div>
-            <div><a href="#">Khác</a></div>
+            <div><a href="#drink">Thức uống</a></div>
+            <div><a href="#rice">Cơm hộp</a></div>
+            <div><a href="#noodle">Mì phở</a></div>
+            <div><a href="#desert">Tráng miệng</a></div>
+            <div><a href="#other">Khác</a></div>
         </div> 
     </header>
     <nav>
@@ -100,11 +110,10 @@
         </div>
     </nav>
         <main>
-            <nav id="top"></nav>
-            <section class="products">
+            <section class="products" >
                 <div class="drink">
                     <p >THỨC UỐNG</p>
-                    <div class="flex">
+                    <div class="flex" id="drink">
                         <div class="product">
                             <div>
                                 <img src="/img/nuocepthom.jpg" alt="nuocepthom">
@@ -153,7 +162,7 @@
                 </div>
                 <div class="desert">
                     <p>TRÁNG MIỆNG</p>
-                    <div class="flex">
+                    <div class="flex" id="desert">
                         <div class="product">
                             <div>
                                 <img src="/img/khucbachsieudao.jpg" alt="che">
@@ -202,8 +211,8 @@
                 </div>
                 <div class="rice">
                     <p>CƠM HỘP</p>
-                    <div class="flex">
-                        <div class="product">
+                    <div class="flex" id="rice">
+                        <div class="product" >
                             <div>
                                 <img src="/img/comtam.jpg" alt="comtam">
                                 <div>
@@ -251,8 +260,8 @@
                 </div>
                 <div class="noddle">
                     <p>MÌ PHỞ</p>
-                    <div class="flex">
-                            <div class="product">
+                    <div class="flex" id="noodle">
+                            <div class="product" >
                                 <div>
                                     <img src="/img/buncha.jpg" alt="buncha">
                                     <div>
@@ -300,8 +309,8 @@
                 </div>
                 <div class="other">
                     <p>KHÁC</p>
-                    <div class="flex">
-                        <div class="product">
+                    <div class="flex" id="other">
+                        <div class="product" >
                             <div>
                                 <img src="/img/kfc.jpg" alt="garankfc">
                                 <div>
